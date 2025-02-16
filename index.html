@@ -25,19 +25,21 @@
         }
     </style>
 
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-            'bike-primary': '#E76F51',
-            'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
-          },
-        },
-      },
-    }
-  </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        black:"#000000CC",
+                        'bike-primary': '#E76F51',
+                        'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
+                        'bike-banner-bg':'#E76F511A',
+                    },
+                },
+            },
+        }
+    </script>
 </head>
 
 <body>
@@ -82,6 +84,66 @@
                 </div>
             </div>
         </nav>
+
+        <!-- carosel area  -->
+        <div class="carousel w-full bg-bike-banner-bg lg:h-[550px]">
+            
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row justify-center items-center px-5 lg:px-28">
+                    <!-- text-content  -->
+                     <div class="w-3/5  space-y-7 ">
+                        <h1 class=" text-3xl lg:text-7xl font-bold">Ride-on R15 V4 with Smile</h1>
+                        <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam beatae tempora harum distinctio, quasi velit?</p>
+                        <button class="btn bg-bike-primary text-white">Purchase</button>
+                     </div>
+                     <!-- image-content -->
+                      <div>
+                        <img src="images//slider/bike1.png" alt="">
+                      </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row  justify-center items-center  px-28">
+                    <!-- text-content  -->
+                     <div class="w-3/5  space-y-7 ">
+                        <p class="text-black">Lorem ipsum dolor sit amet consectetur </p>
+                        <h1 class=" text-3xl lg:text-7xl font-bold">Honda CBR 300R</h1>
+                        <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam beatae tempora harum distinctio, quasi velit?</p>
+                        <button class="btn bg-bike-primary text-white">Purchase</button>
+                     </div>
+                     <!-- image-content -->
+                      <div>
+                        <img src="images//slider/bike2.png" alt="">
+                      </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row  justify-center items-center  px-28">
+                    <!-- text-content  -->
+                     <div class="w-3/5  space-y-7 ">
+                        <h1 class=" text-3xl lg:text-7xl font-bold">Ride-on R15 V4 with Smile</h1>
+                        <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam beatae tempora harum distinctio, quasi velit?</p>
+                        <button class="btn bg-bike-primary text-white">Purchase</button>
+                     </div>
+                     <!-- image-content -->
+                      <div>
+                        <img src="images//slider/bike3.png" alt="">
+                      </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- main  -->
     <main class="md:container mx-auto">
